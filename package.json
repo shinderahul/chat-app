@@ -10,11 +10,21 @@
     "type": "git",
     "url": "git+https://github.com/shinderahul/chat-app.git"
   },
-  "keywords": ["node.js", "socket.io", "mongoDb"],
+  "keywords": [
+    "node.js",
+    "socket.io",
+    "mongoDb"
+  ],
   "author": "Rahul Shinde",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shinderahul/chat-app/issues"
   },
-  "homepage": "https://github.com/shinderahul/chat-app#readme"
+  "homepage": "https://github.com/shinderahul/chat-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
