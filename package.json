@@ -1,0 +1,20 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Chat App using NodeJs, MongoDb(mLab) and Socket.io.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinderahul/chat-app.git"
+  },
+  "keywords": ["node.js", "socket.io", "mongoDb"],
+  "author": "Rahul Shinde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shinderahul/chat-app/issues"
+  },
+  "homepage": "https://github.com/shinderahul/chat-app#readme"
+}
