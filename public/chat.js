@@ -31,7 +31,6 @@ function getMessages() {
 }
 
 function postMessages(message) {
-    console.log(message)
     axios({
         method: 'post',
         url: 'http://localhost:3000/messages',
