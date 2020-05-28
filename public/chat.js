@@ -16,6 +16,8 @@ btn.addEventListener('click', function() {
 
 getMessages()
 
+socket.on('message', addMassages)
+
 // Function to add Message
 function addMassages(message) {
     output.innerHTML +='<p><strong>' + message.username + ': </strong>' + message.message + '</p>';
