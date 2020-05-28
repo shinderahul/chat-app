@@ -5,5 +5,6 @@ Chat App using NodeJs, MongoDb(mLab) and Socket.io.
 body-parser
 express
 socket.io
+mongoose
 
 # Database MongoDB [(mLab - AWS)](https://mlab.com/)

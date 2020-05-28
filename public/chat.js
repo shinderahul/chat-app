@@ -12,6 +12,7 @@ var textmessage = document.getElementById('message'),
 btn.addEventListener('click', function() {
     var message = {username: username.value, message: textmessage.value}
     postMessages(message)
+    textmessage.value = ''
 })
 
 getMessages()
