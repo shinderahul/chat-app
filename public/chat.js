@@ -1,8 +1,8 @@
 
 
 // Query DOM
-var message = document.getElementById('message'),
-      handle = document.getElementById('username'),
+var textmessage = document.getElementById('message'),
+      username = document.getElementById('username'),
       btn = document.getElementById('send'),
       output = document.getElementById('output'),
       feedback = document.getElementById('feedback');
@@ -10,7 +10,8 @@ var message = document.getElementById('message'),
 
 
 btn.addEventListener('click', function() {
-    addMassages({username: 'Rahul', message: 'hello world'});
+    var message = {username: username.value, message: textmessage.value}
+    postMessages(message)
 })
 
 getMessages()
@@ -25,4 +26,13 @@ function getMessages() {
     .then(function(response) {
         response.data.forEach(addMassages)
     })
+}
+
+function postMessages(message) {
+    console.log(message)
+    axios({
+        method: 'post',
+        url: 'http://localhost:3000/messages',
+        data: message
+    });
 }
