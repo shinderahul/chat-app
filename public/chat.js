@@ -1,3 +1,5 @@
+
+
 // Query DOM
 var message = document.getElementById('message'),
       handle = document.getElementById('username'),
@@ -8,10 +10,19 @@ var message = document.getElementById('message'),
 
 
 btn.addEventListener('click', function() {
-    addMassage({username: 'Rahul', message: 'hello world'});
+    addMassages({username: 'Rahul', message: 'hello world'});
 })
 
+getMessages()
+
 // Function to add Message
-function addMassage(message) {
+function addMassages(message) {
     output.innerHTML +='<p><strong>' + message.username + ': </strong>' + message.message + '</p>';
+}
+
+function getMessages() {
+    axios.get('http://localhost:3000/messages')
+    .then(function(response) {
+        response.data.forEach(addMassages)
+    })
 }
