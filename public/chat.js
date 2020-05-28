@@ -1,4 +1,4 @@
-
+var socket = io()
 
 // Query DOM
 var textmessage = document.getElementById('message'),
